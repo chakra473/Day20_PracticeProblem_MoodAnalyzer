@@ -17,11 +17,18 @@ namespace Day20_MoodAnalyzer
 
         public string AnalyzeMood()
         {
-            if (this.message.Contains("SAD"))
+            try
             {
-                return "SAD";
+                if (this.message.Contains("SAD"))
+                {
+                    return "SAD";
+                }
+                else
+                {
+                    return "HAPPY";
+                }
             }
-            else
+            catch
             {
                 return "HAPPY";
             }
