@@ -8,16 +8,10 @@ namespace Day20_MoodAnalyzer
 {
     public class MoodAnalyzer
     {
-        private string message;
 
-        public MoodAnalyzer(string message)
+        public string AnalyzeMood(string message)
         {
-            this.message = message;
-        }
-
-        public string AnalyzeMood()
-        {
-            if (this.message.Contains("SAD"))
+            if (message.Contains("SAD"))
             {
                 return "SAD";
             }
