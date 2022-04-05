@@ -12,10 +12,10 @@ namespace TestProject1
             //Arrange
             string expected = "HAPPY";
             string message = "I am in any Mood";
-            MoodAnalyzer mood = new MoodAnalyzer(message);
+            MoodAnalyzer mood = new MoodAnalyzer();
 
             // Act
-            string mood1 = mood.AnalyzeMood();
+            string mood1 = mood.AnalyzeMood(message);
 
             //Assert
             Assert.AreEqual(expected, mood1);
